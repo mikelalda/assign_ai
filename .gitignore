@@ -1,0 +1,31 @@
+# IDE and editors
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node.js
+node_modules/
+
+# Composer
+vendor/
+
+# Build artifacts (keep AMD build files for Moodle)
+# amd/build/
+
+# PHPUnit
+.phpunit.result.cache
+
+# Temporary files
+*.tmp
+*.bak
+*.log
+
+# Environment files
+.env
+.env.local
