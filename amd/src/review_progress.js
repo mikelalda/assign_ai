@@ -18,7 +18,7 @@
  * Polls backend for progress of AI reviews and updates UI accordingly.
  *
  * @module     local_assign_ai/review_progress
- * @copyright  2025 Wilber Narvaez <https://datacurso.com>
+ * @copyright  2025 Wilber Narvaez <https://birtai.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 import Ajax from 'core/ajax';

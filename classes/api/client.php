@@ -16,14 +16,14 @@
 
 namespace local_assign_ai\api;
 
-use aiprovider_datacurso\httpclient\ai_services_api;
+use aiprovider_birtai\httpclient\ai_services_api;
 use local_assign_ai\utils;
 
 /**
  * Client API for local_assign_ai.
  *
  * @package     local_assign_ai
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class client {

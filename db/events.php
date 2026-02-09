@@ -18,7 +18,7 @@
  * Event observers.
  *
  * @package     local_assign_ai
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

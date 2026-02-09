@@ -19,7 +19,7 @@
  *
  * @package    local_assign_ai
  * @category   backup
- * @copyright  2025 Datacurso
+ * @copyright  2025 birtai
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class backup_local_assign_ai_plugin extends backup_local_plugin {

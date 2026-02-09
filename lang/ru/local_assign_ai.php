@@ -19,7 +19,7 @@
  *
  * @package     local_assign_ai
  * @category    string
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -30,7 +30,7 @@ $string['aistatus'] = 'Статус ИИ';
 $string['aitaskdone'] = 'Обработка ИИ завершена. Всего обработано отправок: {$a}';
 $string['aitaskstart'] = 'Обработка отправок ИИ для курса: {$a}';
 $string['aitaskuserqueued'] = 'Отправка в очереди для пользователя с ID {$a->id} ({$a->name})';
-$string['altlogo'] = 'Логотип Datacurso';
+$string['altlogo'] = 'Логотип birtai';
 $string['assign_ai:changestatus'] = 'Изменить статус утверждения ИИ';
 $string['assign_ai:review'] = 'Проверить предложения ИИ для заданий';
 $string['assign_ai:viewdetails'] = 'Просмотреть детали комментариев ИИ';

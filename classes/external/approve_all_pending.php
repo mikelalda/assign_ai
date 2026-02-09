@@ -32,7 +32,7 @@ use external_single_structure;
  *
  * @package     local_assign_ai
  * @category    external
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class approve_all_pending extends external_api {

@@ -18,7 +18,7 @@
  * Plugin version and other meta-data are defined here.
  *
  * @package     local_assign_ai
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -31,5 +31,5 @@ $plugin->requires = 2024100700;
 $plugin->maturity = MATURITY_STABLE;
 $plugin->supported = [405, 501];
 $plugin->dependencies = [
-    'aiprovider_datacurso' => 2025100201,
+    'aiprovider_birtai' => 2025100201,
 ];

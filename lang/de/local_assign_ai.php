@@ -19,7 +19,7 @@
  *
  * @package     local_assign_ai
  * @category    string
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -30,7 +30,7 @@ $string['aistatus'] = 'KI-Status';
 $string['aitaskdone'] = 'KI-Verarbeitung abgeschlossen. Insgesamt verarbeitete Einreichungen: {$a}';
 $string['aitaskstart'] = 'KI-Einreichungen für den Kurs werden verarbeitet: {$a}';
 $string['aitaskuserqueued'] = 'Einreichung in der Warteschlange für Benutzer mit ID {$a->id} ({$a->name})';
-$string['altlogo'] = 'Datacurso-Logo';
+$string['altlogo'] = 'birtai-Logo';
 $string['assign_ai:changestatus'] = 'KI-Genehmigungsstatus ändern';
 $string['assign_ai:review'] = 'KI-Vorschläge für Aufgaben überprüfen';
 $string['assign_ai:viewdetails'] = 'KI-Kommentardetails anzeigen';

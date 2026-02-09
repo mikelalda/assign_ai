@@ -21,7 +21,7 @@
  * during course restore operations.
  *
  * @package    local_assign_ai
- * @copyright  2025 Datacurso
+ * @copyright  2025 birtai
  * @license    https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class restore_local_assign_ai_plugin extends restore_local_plugin {

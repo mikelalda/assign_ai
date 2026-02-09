@@ -19,7 +19,7 @@
  *
  * @package     local_assign_ai
  * @category    string
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -30,7 +30,7 @@ $string['aistatus'] = 'Statut IA';
 $string['aitaskdone'] = 'Traitement IA terminé. Total des soumissions traitées : {$a}';
 $string['aitaskstart'] = 'Traitement des soumissions IA pour le cours : {$a}';
 $string['aitaskuserqueued'] = 'Soumission en file d’attente pour l’utilisateur avec ID {$a->id} ({$a->name})';
-$string['altlogo'] = 'Logo Datacurso';
+$string['altlogo'] = 'Logo birtai';
 $string['assign_ai:changestatus'] = 'Modifier le statut d’approbation de l’IA';
 $string['assign_ai:review'] = 'Examiner les suggestions IA pour les devoirs';
 $string['assign_ai:viewdetails'] = 'Voir les détails des commentaires IA';

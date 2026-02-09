@@ -23,7 +23,7 @@ use stdClass;
  * Class assign_submission
  *
  * @package    local_assign_ai
- * @copyright  2025 Wilber Narvaez <https://datacurso.com>
+ * @copyright  2025 Wilber Narvaez <https://birtai.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class assign_submission {

@@ -19,7 +19,7 @@
  *
  * @package     local_assign_ai
  * @category    string
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -30,7 +30,7 @@ $string['aistatus'] = 'Status AI';
 $string['aitaskdone'] = 'Pemrosesan AI selesai. Total kiriman yang diproses: {$a}';
 $string['aitaskstart'] = 'Memproses kiriman AI untuk kursus: {$a}';
 $string['aitaskuserqueued'] = 'Kiriman dalam antrean untuk pengguna dengan ID {$a->id} ({$a->name})';
-$string['altlogo'] = 'Logo Datacurso';
+$string['altlogo'] = 'Logo birtai';
 $string['assign_ai:changestatus'] = 'Ubah status persetujuan AI';
 $string['assign_ai:review'] = 'Tinjau saran AI untuk tugas';
 $string['assign_ai:viewdetails'] = 'Lihat detail komentar AI';

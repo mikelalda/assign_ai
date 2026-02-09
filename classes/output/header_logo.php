@@ -24,7 +24,7 @@ use renderer_base;
  * Class header_logo
  *
  * @package    local_assign_ai
- * @copyright  2025 Datacurso
+ * @copyright  2025 birtai
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class header_logo implements renderable, templatable {
@@ -36,7 +36,7 @@ class header_logo implements renderable, templatable {
      */
     public function export_for_template(renderer_base $output): array {
         return [
-            'logourl' => $output->image_url('logodatacurso', 'local_assign_ai')->out(false),
+            'logourl' => $output->image_url('logobirtai', 'local_assign_ai')->out(false),
         ];
     }
 }
