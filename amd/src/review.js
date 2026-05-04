@@ -17,7 +17,7 @@
  * Modal for reviewing AI-generated comments (Mustache-based).
  *
  * @module      local_assign_ai/review
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

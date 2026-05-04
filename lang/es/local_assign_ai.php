@@ -19,14 +19,14 @@
  *
  * @package     local_assign_ai
  * @category    string
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Acciones';
-$string['aiconfigheader'] = 'Datacurso Assignment AI';
+$string['aiconfigheader'] = 'birtai Assignment AI';
 $string['aistatus'] = 'Estado IA';
 $string['aistatus_initial_help'] = 'Envía la entrega a la IA para que genere una propuesta.';
 $string['aistatus_initial_short'] = 'Pendiente de revisión IA';
@@ -38,7 +38,7 @@ $string['aistatus_queued_short'] = 'en cola';
 $string['aitaskdone'] = 'Procesamiento de IA completado. Total de envíos procesados: {$a}';
 $string['aitaskstart'] = 'Procesando envíos de IA para el curso: {$a}';
 $string['aitaskuserqueued'] = 'Envío en cola para el usuario con ID {$a->id} ({$a->name})';
-$string['altlogo'] = 'Logo Datacurso';
+$string['altlogo'] = 'Logo birtai';
 $string['approveall'] = 'Aprobar todos';
 $string['assign_ai:changestatus'] = 'Cambiar el estado de aprobación de IAs';
 $string['assign_ai:review'] = 'Revisar las sugerencias de IA para las tareas';
@@ -55,7 +55,7 @@ $string['default_rubric_name'] = 'Rúbrica';
 $string['editgrade'] = 'Editar calificación';
 $string['email'] = 'Correo electrónico';
 $string['error_airequest'] = 'Error al comunicarse con el servicio de IA: {$a}';
-$string['error_ws_not_configured'] = 'Las acciones de revisión de actividades con IA no están disponibles porque el servicio web de Datacurso no está configurado. Complete la configuración en <a href="{$a->url}">Configuración de servicio web Datacurso</a> o contacte a su administrador.';
+$string['error_ws_not_configured'] = 'Las acciones de revisión de actividades con IA no están disponibles porque el servicio web de birtai no está configurado. Complete la configuración en <a href="{$a->url}">Configuración de servicio web birtai</a> o contacte a su administrador.';
 $string['errorparsingrubric'] = 'Error al analizar la respuesta de la rúbrica: {$a}';
 $string['feedbackcomments'] = 'Comentarios';
 $string['feedbackcommentsfull'] = 'Comentarios de retroalimentación';

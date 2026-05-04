@@ -34,7 +34,7 @@ use local_assign_ai\api\client;
  *
  * @package     local_assign_ai
  * @category    task
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class process_all_submissions extends adhoc_task {

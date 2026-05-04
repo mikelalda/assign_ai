@@ -10,10 +10,10 @@ This system does not replace teacher judgment — it acts as an assistant, suppo
 ## Pre-requisites
 
 1. Moodle 4.5
-2. Install the Moodle AI provider "DataCurso AI Provider". Download it for free from [https://moodle.org/plugins/aiprovider_datacurso/versions](https://moodle.org/plugins/aiprovider_datacurso/versions).
-3. In the DataCurso AI Provider settings, configure a valid license key as documented at [https://docs.datacurso.com/index.php?title=Datacurso_AI_Provider#Getting_license_keys](https://docs.datacurso.com/index.php?title=Datacurso_AI_Provider#Getting_license_keys).
+2. Install the Moodle AI provider "birtai AI Provider". Download it for free from [https://moodle.org/plugins/aiprovider_birtai/versions](https://moodle.org/plugins/aiprovider_birtai/versions).
+3. In the birtai AI Provider settings, configure a valid license key as documented at [https://docs.birtai.com/index.php?title=birtai_AI_Provider#Getting_license_keys](https://docs.birtai.com/index.php?title=birtai_AI_Provider#Getting_license_keys).
 
-**IMPORTANT**: This plugin will not function unless the "DataCurso AI Provider" plugin is installed and licensed.
+**IMPORTANT**: This plugin will not function unless the "birtai AI Provider" plugin is installed and licensed.
 ## Installation via uploaded ZIP file
 
 1. Log in to your Moodle site as an administrator and go to Site `Administration > Plugins > Install Plugins`.

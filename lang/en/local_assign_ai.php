@@ -19,14 +19,14 @@
  *
  * @package     local_assign_ai
  * @category    string
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
 $string['actions'] = 'Actions';
-$string['aiconfigheader'] = 'Datacurso Assignment AI';
+$string['aiconfigheader'] = 'birtai Assignment AI';
 $string['aistatus'] = 'AI Status';
 $string['aistatus_initial_help'] = 'Send the submission to AI to generate a proposal.';
 $string['aistatus_initial_short'] = 'Pending AI review';
@@ -38,7 +38,7 @@ $string['aistatus_queued_short'] = 'queued';
 $string['aitaskdone'] = 'AI processing complete. Total submissions processed: {$a}';
 $string['aitaskstart'] = 'Processing AI submissions for course: {$a}';
 $string['aitaskuserqueued'] = 'Submission queued for user ID {$a->id} ({$a->name})';
-$string['altlogo'] = 'Datacurso logo';
+$string['altlogo'] = 'birtai logo';
 $string['approveall'] = 'Approve all';
 $string['assign_ai:changestatus'] = 'Change AI approval status';
 $string['assign_ai:review'] = 'Review AI suggestions for assignments';
@@ -55,7 +55,7 @@ $string['default_rubric_name'] = 'Rubric';
 $string['editgrade'] = 'Edit grade';
 $string['email'] = 'Email';
 $string['error_airequest'] = 'Error communicating with the AI service: {$a}';
-$string['error_ws_not_configured'] = 'AI review actions are unavailable because the Datacurso web service is not configured. Complete the setup at <a href="{$a->url}">Datacurso webservice setup</a> or contact your administrator.';
+$string['error_ws_not_configured'] = 'AI review actions are unavailable because the birtai web service is not configured. Complete the setup at <a href="{$a->url}">birtai webservice setup</a> or contact your administrator.';
 $string['errorparsingrubric'] = 'Error parsing rubric_response: {$a}';
 $string['feedbackcomments'] = 'Comments';
 $string['feedbackcommentsfull'] = 'Feedback comments';

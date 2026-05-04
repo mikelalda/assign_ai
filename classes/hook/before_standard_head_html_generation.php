@@ -20,7 +20,7 @@ namespace local_assign_ai\hook;
  * Class before_standard_head_html_generation
  *
  * @package    local_assign_ai
- * @copyright  2025 Datacurso
+ * @copyright  2025 birtai
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class before_standard_head_html_generation {

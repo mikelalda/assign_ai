@@ -19,7 +19,7 @@
  *
  * @package   local_assign_ai
  * @category  test
- * @copyright 2025 Datacurso
+ * @copyright 2025 birtai
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 

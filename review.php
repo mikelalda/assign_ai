@@ -18,7 +18,7 @@
  * Review page for local_assign_ai.
  *
  * @package     local_assign_ai
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -43,9 +43,9 @@ try {
     // Instantiate the assign object.
     $assign = new assign($context, $cm, $course);
 
-    // Validate Datacurso AI provider configuration.
-    if (!\aiprovider_datacurso\webservice_config::is_configured()) {
-        $setupurl = \aiprovider_datacurso\webservice_config::get_url();
+    // Validate birtai AI provider configuration.
+    if (!\aiprovider_birtai\webservice_config::is_configured()) {
+        $setupurl = \aiprovider_birtai\webservice_config::get_url();
         $messageparams = (object)['url' => $setupurl->out(false)];
         \core\notification::error(get_string('error_ws_not_configured', 'local_assign_ai', $messageparams));
     }

@@ -19,7 +19,7 @@
  *
  * @package     local_assign_ai
  * @category    external
- * @copyright   2025 Wilber Narvaez <https://datacurso.com>
+ * @copyright   2025 Wilber Narvaez <https://birtai.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
@@ -40,7 +40,7 @@ use external_value;
  *
  * @package     local_assign_ai
  * @category    external
- * @copyright   2025 Wilber Narvaez <https://datacurso.com>
+ * @copyright   2025 Wilber Narvaez <https://birtai.com>
  * @license     https://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 class get_progress extends external_api {

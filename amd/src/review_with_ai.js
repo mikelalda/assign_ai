@@ -17,7 +17,7 @@
  * Handles the "Review with AI" actions on the assignment review page.
  *
  * @module      local_assign_ai/review_with_ai
- * @copyright   2025 Datacurso
+ * @copyright   2025 birtai
  * @license     http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
