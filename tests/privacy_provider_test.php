@@ -98,7 +98,7 @@ final class privacy_provider_test extends provider_testcase {
      */
     public function test_export_user_data(): void {
         $user = $this->getDataGenerator()->create_user();
-        $record = self::create_userdata($user->id);
+        self::create_userdata($user->id);
 
         $usercontext = context_user::instance($user->id);
         $writer = writer::with_context($usercontext);

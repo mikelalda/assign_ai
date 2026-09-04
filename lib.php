@@ -34,7 +34,7 @@ require_once($CFG->dirroot . '/local/assign_ai/locallib.php');
  * @package local_assign_ai
  */
 function local_assign_ai_extend_settings_navigation(settings_navigation $nav, context $context) {
-    global $PAGE, $DB;
+    global $PAGE;
 
     // Verify that we are in a module (activity) context.
     if ($context->contextlevel != CONTEXT_MODULE) {

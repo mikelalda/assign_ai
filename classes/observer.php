@@ -41,8 +41,6 @@ class observer {
      * @return void
      */
     public static function submission_created(\mod_assign\event\submission_created $event) {
-        global $DB;
-
         try {
             $data = $event->get_data();
             $other = $data['other'];
@@ -71,17 +69,6 @@ class observer {
         } catch (\Exception $e) {
             debugging('Exception in submission_created observer: ' . $e->getMessage(), DEBUG_DEVELOPER);
         }
-    }
-
-    /**
-     * Normalizes a score to be saved as an int if it has no decimal places, or as a float otherwise.
-     *
-     * @param mixed $score Score value (string, int or float).
-     * @return int|float
-     */
-    private static function normalize_points($score) {
-        $float = (float) $score;
-        return (fmod($float, 1.0) == 0.0) ? (int) $float : $float;
     }
 
     /**

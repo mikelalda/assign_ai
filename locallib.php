@@ -34,8 +34,6 @@ require_once($CFG->dirroot . '/grade/grading/lib.php');
  * @package local_assign_ai
  */
 function local_assign_ai_build_rubric_json(assign $assign) {
-    global $DB;
-
     $context = $assign->get_context();
 
     // Initialize grading manager.
@@ -62,13 +60,13 @@ function local_assign_ai_build_rubric_json(assign $assign) {
         'criteria' => [],
     ];
 
-    foreach ($definition->rubric_criteria as $criterionid => $criterion) {
+    foreach ($definition->rubric_criteria as $criterion) {
         $crit = [
             'criterion' => $criterion['description'],
             'levels' => [],
         ];
 
-        foreach ($criterion['levels'] as $levelid => $level) {
+        foreach ($criterion['levels'] as $level) {
             $crit['levels'][] = [
                 'points' => (float) $level['score'],
                 'description' => $level['definition'],

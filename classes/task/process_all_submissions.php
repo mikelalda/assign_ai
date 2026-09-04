@@ -49,7 +49,7 @@ class process_all_submissions extends adhoc_task {
      * @return void
      */
     public function execute() {
-        global $DB, $CFG;
+        global $DB;
 
         $data = $this->get_custom_data();
 

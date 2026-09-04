@@ -42,8 +42,6 @@ class process_submission_ai extends adhoc_task {
      * @return void
      */
     public function execute(): void {
-        global $CFG;
-
         $data = $this->get_custom_data();
         if (empty($data->userid) || empty($data->cmid)) {
             return;
