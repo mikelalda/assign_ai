@@ -50,11 +50,12 @@ jobs:
         with:
           path: plugin
 
+      # birtai keeps Moodle 4.5 on its MOODLE_405_STABLE branch and Moodle 5 on main.
       - name: Check out the required plugin aiprovider_birtai
         uses: actions/checkout@v5
         with:
           repository: mikelalda/birtai
-          ref: main
+          ref: ${{ matrix.moodle-branch == 'MOODLE_405_STABLE' && 'MOODLE_405_STABLE' || 'main' }}
           path: extra-plugins/birtai
 
       - name: Setup Node for the JavaScript unit tests
