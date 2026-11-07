@@ -3,7 +3,7 @@ import {renderTemplate, flush} from '../helpers';
 
 let Ajax;
 let Notification;
-let ModalFactory;
+let Modal;
 let loader;
 
 const ROWS = [{
@@ -14,7 +14,7 @@ const MESSAGE = '<p>Good work &amp; well argued.</p>';
 
 const approveAll = () => document.querySelector('.js-approve-all');
 const details = () => document.querySelector('.view-details');
-const modal = () => ModalFactory.instances[ModalFactory.instances.length - 1];
+const modal = () => Modal.instances[Modal.instances.length - 1];
 const inModal = (selector) => modal().root.querySelector(selector);
 
 /**
@@ -54,8 +54,8 @@ beforeEach(() => {
     });
     Ajax = require('core/ajax');
     Notification = require('core/notification').default;
-    ModalFactory = require('core/modal_factory').default;
-    ModalFactory.instances = [];
+    Modal = require('core/modal').default;
+    Modal.instances = [];
     loader = require('editor_tiny/loader');
     Ajax.setResponses({
         'local_assign_ai_get_details': {message: MESSAGE},
@@ -192,6 +192,6 @@ describe('review modal', () => {
         await openDetails();
 
         expect(Notification.exception).toHaveBeenCalledWith(failure);
-        expect(ModalFactory.instances).toHaveLength(0);
+        expect(Modal.instances).toHaveLength(0);
     });
 });
