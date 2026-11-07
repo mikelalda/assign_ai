@@ -50,12 +50,25 @@ jobs:
         with:
           path: plugin
 
+      # aiprovider_birtai is a private repository, which the default GITHUB_TOKEN
+      # cannot read. BIRTAI_REPO_TOKEN is a fine-grained token with read-only
+      # access to the contents of maldalur/birtai, saved as a secret of this repository.
+      - name: Check that the token for aiprovider_birtai is set
+        env:
+          TOKEN: ${{ secrets.BIRTAI_REPO_TOKEN }}
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::Add the BIRTAI_REPO_TOKEN secret, with read access to maldalur/birtai: this plugin requires aiprovider_birtai, a private repository."
+            exit 1
+          fi
+
       - name: Check out the required plugin aiprovider_birtai
         uses: actions/checkout@v5
         with:
           repository: maldalur/birtai
           ref: main
           path: extra-plugins/birtai
+          token: ${{ secrets.BIRTAI_REPO_TOKEN }}
 
       - name: Setup Node for the JavaScript unit tests
         if: ${{ matrix.moodle-branch == 'MOODLE_405_STABLE' && matrix.database == 'mariadb' }}
