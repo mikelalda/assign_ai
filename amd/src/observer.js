@@ -33,7 +33,7 @@ import Config from 'core/config';
  *
  * @returns {Promise<void>}
  */
-export const init = async () => {
+export const init = async() => {
 
     const params = new URLSearchParams(window.location.search);
     const userid = parseInt(params.get('userid'));
@@ -47,7 +47,7 @@ export const init = async () => {
     try {
         const response = await Ajax.call([{
             methodname: 'local_assign_ai_get_token',
-            args: { userid, assignmentid }
+            args: {userid, assignmentid}
         }])[0];
 
         if (!response?.approval_token) {

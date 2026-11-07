@@ -23,7 +23,7 @@
 
 import Ajax from 'core/ajax';
 import Notification from 'core/notification';
-import { get_string as getString } from 'core/str';
+import {get_string as getString} from 'core/str';
 
 /**
  * Injects AI-generated feedback, rubric selections and/or grade
@@ -35,7 +35,7 @@ import { get_string as getString } from 'core/str';
  * @param {number} params.assignmentid         Assignment identifier (cmid) from the grader URL.
  * @param {number} params.courseid             Course ID of the assignment.
  */
-export const init = async ({ token, userid, assignmentid, courseid }) => {
+export const init = async({token, userid, assignmentid, courseid}) => {
 
     if (!token || !userid || !assignmentid || !courseid) {
         return;
@@ -197,7 +197,7 @@ export const init = async ({ token, userid, assignmentid, courseid }) => {
                                             cancelable: true,
                                             view: window
                                         }));
-                                        radioInput.dispatchEvent(new Event('change', { bubbles: true }));
+                                        radioInput.dispatchEvent(new Event('change', {bubbles: true}));
                                     }
 
                                     levelCell.setAttribute('aria-checked', 'true');
@@ -220,8 +220,8 @@ export const init = async ({ token, userid, assignmentid, courseid }) => {
                         const remarkTextarea = row.querySelector('td.remark textarea');
                         if (remarkTextarea && comment) {
                             remarkTextarea.value = comment;
-                            remarkTextarea.dispatchEvent(new Event('input', { bubbles: true }));
-                            remarkTextarea.dispatchEvent(new Event('change', { bubbles: true }));
+                            remarkTextarea.dispatchEvent(new Event('input', {bubbles: true}));
+                            remarkTextarea.dispatchEvent(new Event('change', {bubbles: true}));
                             injected = true;
                         }
 
@@ -246,7 +246,7 @@ export const init = async ({ token, userid, assignmentid, courseid }) => {
                     return false;
                 }
                 input.value = grade;
-                input.dispatchEvent(new Event('change', { bubbles: true }));
+                input.dispatchEvent(new Event('change', {bubbles: true}));
 
                 return true;
             };

@@ -1,0 +1,16 @@
+{
+  "name": "local_assign_ai-jsunit",
+  "private": true,
+  "description": "Unit tests of the AMD modules in amd/src",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.0",
+    "@babel/preset-env": "^7.28.0",
+    "babel-jest": "^30.0.5",
+    "jest": "^30.0.5",
+    "jest-environment-jsdom": "^30.0.5",
+    "mustache": "^4.2.0"
+  }
+}

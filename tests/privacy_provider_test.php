@@ -34,11 +34,13 @@ use core_privacy\tests\provider_testcase;
 use local_assign_ai\privacy\provider;
 use stdClass;
 
+#[\PHPUnit\Framework\Attributes\CoversClass(\local_assign_ai\privacy\provider::class)]
+#[\PHPUnit\Framework\Attributes\Group('local_assign_ai')]
 /**
  * Unit tests for the privacy provider.
  *
- * @coversDefaultClass \local_assign_ai\privacy\provider
  * @group local_assign_ai
+ * @covers \local_assign_ai\privacy\provider
  */
 final class privacy_provider_test extends provider_testcase {
     protected function setUp(): void {
@@ -49,8 +51,6 @@ final class privacy_provider_test extends provider_testcase {
 
     /**
      * Tests that get_contexts_for_userid() returns the expected contexts for the given user.
-     *
-     * @covers ::get_contexts_for_userid
      */
     public function test_get_contexts_for_userid(): void {
         $user = $this->getDataGenerator()->create_user();
@@ -67,8 +67,6 @@ final class privacy_provider_test extends provider_testcase {
 
     /**
      * Tests that get_users_in_context() correctly identifies users with data in a given context.
-     *
-     * @covers ::get_users_in_context
      */
     public function test_get_users_in_context(): void {
         $component = 'local_assign_ai';
@@ -93,8 +91,6 @@ final class privacy_provider_test extends provider_testcase {
 
     /**
      * Tests that export_user_data() exports user data correctly for approved contexts.
-     *
-     * @covers ::export_user_data
      */
     public function test_export_user_data(): void {
         $user = $this->getDataGenerator()->create_user();
@@ -113,8 +109,6 @@ final class privacy_provider_test extends provider_testcase {
 
     /**
      * Tests that delete_data_for_all_users_in_context() removes all data for users in a context.
-     *
-     * @covers ::delete_data_for_all_users_in_context
      */
     public function test_delete_data_for_all_users_in_context(): void {
         global $DB;
@@ -136,8 +130,6 @@ final class privacy_provider_test extends provider_testcase {
 
     /**
      * Tests that delete_data_for_user() deletes data for the specified user only.
-     *
-     * @covers ::delete_data_for_user
      */
     public function test_delete_data_for_user(): void {
         global $DB;

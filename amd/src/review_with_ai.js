@@ -23,13 +23,13 @@
 
 import Ajax from 'core/ajax';
 import Notification from 'core/notification';
-import { get_string as getString } from 'core/str';
-import { ensurePolling } from 'local_assign_ai/review_progress';
+import {get_string as getString} from 'core/str';
+import {ensurePolling} from 'local_assign_ai/review_progress';
 
 /**
  * Initialize event listeners for AI review buttons.
  */
-export const init = async () => {
+export const init = async() => {
     // Load localized strings
     const [
         strProcessing,
@@ -76,7 +76,7 @@ export const init = async () => {
                 // AJAX call to the web service
                 Ajax.call([{
                     methodname: 'local_assign_ai_process_submission',
-                    args: { cmid: cmid, userid: userid, all: all, pendingid: pendingid },
+                    args: {cmid: cmid, userid: userid, all: all, pendingid: pendingid},
                 }])[0].done(result => {
                     if (result.status === 'queued') {
                         Notification.addNotification({
@@ -106,7 +106,8 @@ export const init = async () => {
                                 if (hint) {
                                     getString('aistatus_queued_help', 'local_assign_ai').then(txt => {
                                         hint.textContent = txt;
-                                    }).catch(() => {});
+                                        return;
+                                    }).catch(Notification.exception);
                                 }
                                 // Disable all row actions while queued.
                                 row.querySelectorAll('button').forEach(b => b.setAttribute('disabled', 'disabled'));
@@ -156,7 +157,9 @@ export const init = async () => {
                     strConfirmReviewAll,
                     strContinue,
                     {triggerElement: button}
-                ).then(processRequest).catch(() => {});
+                ).then(processRequest).catch(() => {
+                    // The user cancelled: nothing to do.
+                });
                 return;
             }
 

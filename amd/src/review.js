@@ -25,10 +25,10 @@ import ModalFactory from 'core/modal_factory';
 import ModalEvents from 'core/modal_events';
 import Ajax from 'core/ajax';
 import Notification from 'core/notification';
-import { getTinyMCE } from 'editor_tiny/loader';
+import {getTinyMCE} from 'editor_tiny/loader';
 import * as TinyEditor from 'editor_tiny/editor';
 import Templates from 'core/templates';
-import { get_string as getString } from 'core/str';
+import {get_string as getString} from 'core/str';
 
 export const init = () => {
     document.querySelectorAll('.view-details').forEach(btn => {
@@ -39,7 +39,7 @@ export const init = () => {
 
             Ajax.call([{
                 methodname: 'local_assign_ai_get_details',
-                args: { courseid, cmid, userid }
+                args: {courseid, cmid, userid}
             }])[0].done(async data => {
                 // Load localized strings.
                 const [title, saveLabel, saveApproveLabel] = await Promise.all([
@@ -99,7 +99,7 @@ export const init = () => {
                     const newMessage = getContent();
                     Ajax.call([{
                         methodname: 'local_assign_ai_update_response',
-                        args: { courseid, cmid, userid, message: newMessage },
+                        args: {courseid, cmid, userid, message: newMessage},
                     }])[0].done(() => location.reload())
                         .fail(Notification.exception);
                 });
@@ -110,11 +110,11 @@ export const init = () => {
                     const newMessage = getContent();
                     Ajax.call([{
                         methodname: 'local_assign_ai_update_response',
-                        args: { courseid, cmid, userid, message: newMessage },
+                        args: {courseid, cmid, userid, message: newMessage},
                     }])[0].done(() => {
                         Ajax.call([{
                             methodname: 'local_assign_ai_change_status',
-                            args: { courseid, cmid, userid, action: 'approve' },
+                            args: {courseid, cmid, userid, action: 'approve'},
                         }])[0].done(() => location.reload())
                             .fail(Notification.exception);
                     }).fail(Notification.exception);
@@ -125,7 +125,7 @@ export const init = () => {
                     e.preventDefault();
                     Ajax.call([{
                         methodname: 'local_assign_ai_change_status',
-                        args: { courseid, cmid, userid, action: 'rejected' },
+                        args: {courseid, cmid, userid, action: 'rejected'},
                     }])[0].done(() => location.reload())
                         .fail(Notification.exception);
                 });
@@ -133,7 +133,9 @@ export const init = () => {
                 // Destroy TinyMCE instance when modal is closed.
                 root.on(ModalEvents.hidden, () => {
                     const inst = tinymce && tinymce.get(textarea.id);
-                    if (inst) { inst.remove(); }
+                    if (inst) {
+                        inst.remove();
+                    }
                 });
             }).fail(Notification.exception);
         });
@@ -160,7 +162,7 @@ export const init = () => {
                 const cmid = parseInt(approveAllBtn.dataset.cmid, 10);
                 Ajax.call([{
                     methodname: 'local_assign_ai_approve_all_pending',
-                    args: { courseid, cmid },
+                    args: {courseid, cmid},
                 }])[0]
                     .done(() => window.location.reload())
                     .fail(err => {
@@ -175,7 +177,9 @@ export const init = () => {
                 confirmApproveAll,
                 continueLabel,
                 {triggerElement: approveAllBtn}
-            ).then(doApproveAll).catch(() => {});
+            ).then(doApproveAll).catch(() => {
+                // The user cancelled: nothing to do.
+            });
         });
     }
 };
